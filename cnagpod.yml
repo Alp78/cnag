@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cnagpod
+  labels:
+    app: cnag
+    language: go
+spec:
+  containers:
+    - name: cnag
+      image: cnag
+      imagePullPolicy: Never
+      ports:
+        - containerPort: 8080
+...
